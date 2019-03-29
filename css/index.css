@@ -1,0 +1,341 @@
+ html,body {
+  height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2;
+	font-size: 1em;
+	line-height: 1.5em;
+
+}
+#map {
+	height: 100%;
+
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+a img{
+	width: 24px;
+  height: 24px;
+  margin-left: 3em;
+}
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 35px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: block;/* Hacemos que la cabecera tenga una posición fija */
+}
+
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 6px 0 0 0px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+
+		nav ul li a:hover {
+		background: #0b76a6;
+	}
+
+  #floating-panel{
+position: absolute;
+top: 4px;
+left: 1px; /*Ubicacion del panel en la vista*/
+z-index:2;
+background-color: #333;
+padding: 0px;
+border: 0px solid #000;
+text-align: center;
+font-family: 'Roboto','sans-serif';
+line-height: 1px;
+padding-left: 1px;
+margin: 0px; /*Altura del panel*/
+}
+
+
+.dropdown-menu{
+  background-color: transparent;
+   width: 35px; /*Ancho botones*/
+   height: 30px;
+}
+
+.btn-primary{
+  width: 35px; /*Ancho botones*/
+  height: 30px;
+  border-radius: 10px;
+  padding: 3px;
+  background: #333;
+  border: #333;
+
+}
+
+.btn-primary:hover{
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+.btn-primary.active.focus{
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+
+}
+
+
+.fa-bars{
+  height: 50px;
+	padding: 0;
+	font-size: 1.5pc;
+	top: 2px;
+	padding: 0px;
+	margin: 0px;
+	
+
+}
+
+.btn-success{
+top: 0px;
+left: 0px;
+width: 183px; /*Ancho botones*/
+height: 35px;
+border-radius: 10px;
+position: 5px;
+font-weight: bold;
+}
+
+.platzigram {
+  font-family: 'Oleo Script';
+  font-size: 25px;
+  color: secondary-color !important;
+}
+
+#logo-header:hover {
+  -color: #0b76a6;
+  color: #FFFF00;
+}
+
+.btn-success{
+  color: white;
+  margin: 1;
+  padding: 1;
+  size: 2%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #007da7;
+}
+
+.btn-success:hover{
+  color: #0b76a6;
+  color: #FFFF00;
+
+}
+
+.fa-globe-americas{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: -14em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+.fa-envelope{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: -12em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+.fa-sync-alt{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: -10em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+
+.enlace {
+  display:inline;
+  border:0;
+  padding:0;
+  margin:35px;
+  background:none;
+  color:#000088;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height:2.5em;
+}
+
+.enlace:hover {
+  text-decoration:none;
+  color:#0000cc;
+  cursor:pointer;
+}
+
+.table-bordered {
+   width: 20%;
+}
+th, td {
+   width: 20%;
+}
+
+@media (max-width: 1310px) {
+
+  .platzigram {
+    font-family: 'Oleo Script';
+    font-size: 12px;
+    color: secondary-color !important;
+  }
+  #logo-header {
+  	float: left;
+  	padding: 6px 0 0 5px;
+  	text-decoration: none;
+  }
+  a img {
+  	width: 21px;
+    height: auto;
+    height: auto;
+    margin-left: 42px;
+
+	}
+
+	.btn-success{
+		top: 0px;
+		left: 0px;
+		width: 204px; /*Ancho botones*/
+		height: 35px;
+		border-radius: 10px;
+		position: 5px;
+		}
+
+.fa-globe-americas{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: -2.0em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+.fa-envelope{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: -0.3em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+.fa-sync-alt{
+width: 20px; /*Ancho botones*/
+height:30px;
+margin-left: 1.5em;
+font-size: 1.5em;
+top: 4pt;
+position: absolute;
+
+}
+
+.btn-success{
+top: 0px;
+left: 0px;
+width: 160px; /*Ancho botones*/
+height: 30px;
+border-radius: 10px;
+position: 5px;
+font-weight: bold;
+}
+
+
+}
