@@ -7,17 +7,11 @@
 	background: #f2f2f2;
 	font-size: 1em;
 	line-height: 1.5em;
-<<<<<<< HEAD
-}
-#map {
-	height: 98vh;
-=======
 
 }
 #map {
 	height: 100%;
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 h1 {
@@ -52,13 +46,9 @@ a img{
 		color: white;
 	}
 
-<<<<<<< HEAD
-
-=======
 /*
  * Logo
  */
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 #logo-header {
 	float: left;
 	padding: 6px 0 0 0px;
@@ -81,13 +71,10 @@ a img{
 		color: #999;
 	}
 
-<<<<<<< HEAD
-=======
 
 /*
  * Navegación
  */
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 nav {
 	float: right;
 }
@@ -113,11 +100,7 @@ nav {
 		background: #0b76a6;
 	}
 
-<<<<<<< HEAD
-#floating-panel{
-=======
   #floating-panel{
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 position: absolute;
 top: 4px;
 left: 1px; /*Ubicacion del panel en la vista*/
@@ -132,18 +115,11 @@ padding-left: 1px;
 margin: 0px; /*Altura del panel*/
 }
 
-<<<<<<< HEAD
-.dropdown-menu{
-  background-color: transparent;
-  width: 35px; /*Ancho botones*/
-  height: 30px;
-=======
 
 .dropdown-menu{
   background-color: transparent;
    width: 35px; /*Ancho botones*/
    height: 30px;
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 .btn-primary{
@@ -165,10 +141,7 @@ margin: 0px; /*Altura del panel*/
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-<<<<<<< HEAD
-=======
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
@@ -181,25 +154,17 @@ margin: 0px; /*Altura del panel*/
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-<<<<<<< HEAD
-=======
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 .btn-primary {
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-<<<<<<< HEAD
-}
-
-=======
 
 }
 
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 .fa-bars{
   height: 50px;
 	padding: 0;
@@ -207,11 +172,8 @@ margin: 0px; /*Altura del panel*/
 	top: 2px;
 	padding: 0px;
 	margin: 0px;
-<<<<<<< HEAD
-=======
 	
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 .btn-success{
@@ -257,26 +219,6 @@ margin-left: -14em;
 font-size: 1.5em;
 top: 4pt;
 position: absolute;
-<<<<<<< HEAD
-}
-
-.fa-envelope{
-	width: 20px; /*Ancho botones*/
-	height:30px;
-	margin-left: -12em;
-	font-size: 1.5em;
-	top: 4pt;
-	position: absolute;
-}
-
-.fa-sync-alt{
-	width: 20px; /*Ancho botones*/
-	height:30px;
-	margin-left: -10em;
-	font-size: 1.5em;
-	top: 4pt;
-	position: absolute;
-=======
 
 }
 
@@ -298,7 +240,6 @@ font-size: 1.5em;
 top: 4pt;
 position: absolute;
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
 
 
@@ -321,15 +262,6 @@ position: absolute;
 }
 
 .table-bordered {
-<<<<<<< HEAD
-  width: 20%;
-	}
-	th, td {
-  width: 20%;
-}
-
-@media (max-width: 1310px) {
-=======
    width: 20%;
 }
 th, td {
@@ -338,7 +270,6 @@ th, td {
 
 @media (max-width: 1310px) {
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
   .platzigram {
     font-family: 'Oleo Script';
     font-size: 12px;
@@ -354,10 +285,7 @@ th, td {
     height: auto;
     height: auto;
     margin-left: 42px;
-<<<<<<< HEAD
-=======
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 	}
 
 	.btn-success{
@@ -369,44 +297,6 @@ th, td {
 		position: 5px;
 		}
 
-<<<<<<< HEAD
-	.fa-globe-americas{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: -2.0em;
-		font-size: 1.5em;
-		top: 4pt;
-		position: absolute;
-	}
-
-	.fa-envelope{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: -0.3em;
-		font-size: 1.5em;
-		top: 4pt;
-		position: absolute;
-	}
-
-	.fa-sync-alt{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: 1.5em;
-		font-size: 1.5em;
-		top: 4pt;
-		position: absolute;
-	}
-
-	.btn-success{
-		top: 0px;
-		left: 0px;
-		width: 160px; /*Ancho botones*/
-		height: 30px;
-		border-radius: 10px;
-		position: 5px;
-		font-weight: bold;
-	}
-=======
 .fa-globe-americas{
 width: 20px; /*Ancho botones*/
 height:30px;
@@ -448,5 +338,4 @@ font-weight: bold;
 }
 
 
->>>>>>> 7ca303c50701cf19cf64e4c882d2137d5cf8b088
 }
