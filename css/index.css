@@ -26,7 +26,7 @@ p {
 	margin: 0 0 1.5em 0;
 }
 
-a img{
+.logo img{
 	width: 24px;
   height: 24px;
   margin-left: 3em;
@@ -49,28 +49,43 @@ a img{
 /*
  * Logo
  */
-#logo-header {
+/* #logo-header {
+	float: left;
+	padding: 6px 0 0 0px;
+	text-decoration: none;
+} */
+
+/* ---Logo del Header */
+.logo {
 	float: left;
 	padding: 6px 0 0 0px;
 	text-decoration: none;
 }
-	#logo-header:hover {
-		color: #0b76a6;
-	}
 
-	#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-	}
 
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: #999;
-	}
+.logo :hover {
+	color: #FFFF00;
+}
 
+a:hover {
+	text-decoration: none;
+}
+
+.logo a img{
+	width: 24px;
+  height: 24px;
+  margin-left: 3em;
+}
+
+
+/* -----Title del header----- */
+
+.platzigram {
+  font-family: 'Oleo Script';
+  font-size: 25px;
+	color: secondary-color !important;
+	text-decoration: none;
+}
 
 /*
  * Navegación
@@ -186,16 +201,9 @@ position: 5px;
 font-weight: bold;
 }
 
-.platzigram {
-  font-family: 'Oleo Script';
-  font-size: 25px;
-  color: secondary-color !important;
-}
 
-#logo-header:hover {
-  -color: #0b76a6;
-  color: #FFFF00;
-}
+
+
 
 .btn-success{
   color: white;
@@ -275,7 +283,7 @@ th, td {
     font-size: 12px;
     color: secondary-color !important;
   }
-  #logo-header {
+  .logo {
   	float: left;
   	padding: 6px 0 0 5px;
   	text-decoration: none;
