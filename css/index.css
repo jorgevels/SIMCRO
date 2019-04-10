@@ -7,11 +7,10 @@
 	background: #f2f2f2;
 	font-size: 1em;
 	line-height: 1.5em;
-
 }
+
 #map {
 	height: 100%;
-
 }
 
 h1 {
@@ -26,42 +25,38 @@ p {
 	margin: 0 0 1.5em 0;
 }
 
-.logo img{
+a img{
 	width: 24px;
   height: 24px;
-  margin-left: 3em;
+	margin-left: -2em;
+	margin-top: 2px;
 }
 
-#main-header {
+.header {
 	background: #333;
 	color: white;
-	height: 35px;
+	height: 35px; /* Alto del header */
 	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: block;/* Hacemos que la cabecera tenga una posición fija */
+	left: 0;  /* Posicionamos la cabecera al lado izquierdo */
+	top: 0;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-	#main-header a {
-		color: white;
-	}
-
-/*
- * Logo
- */
-/* #logo-header {
-	float: left;
-	padding: 6px 0 0 0px;
-	text-decoration: none;
-} */
+.header a {
+	color: white;
+	align-items: center;
+}
 
 /* ---Logo del Header */
-.logo {
+
+.logo img{
 	float: left;
-	padding: 6px 0 0 0px;
+	padding: 0px 0 0 0px;
 	text-decoration: none;
 }
-
 
 .logo :hover {
 	color: #FFFF00;
@@ -71,20 +66,51 @@ a:hover {
 	text-decoration: none;
 }
 
-.logo a img{
-	width: 24px;
-  height: 24px;
-  margin-left: 3em;
+/* ------Titulo del logo------ */
+.logo .platzigram {
+  font-family: 'Oleo Script';
+	font-size: 25px;
+	margin-left: -22em;
+	position: absolute;
+	margin-top: 2px;
 }
 
+.fa-globe-americas{
+	margin-left: -14em;
+	font-size: 1.4em;
+	top: 4pt;
+	position: absolute;
+	
+	}
+	
+.fa-comment-dots{
+	margin-left: -12em;
+	font-size: 1.5em;
+	top: 4pt;
+	position: absolute;
+}
+	
+.fa-sync-alt{
+	margin-left: -10em;
+	font-size: 1.4em;
+	top: 4pt;
+	position: absolute;
+}
 
-/* -----Title del header----- */
-
-.platzigram {
-  font-family: 'Oleo Script';
-  font-size: 25px;
-	color: secondary-color !important;
-	text-decoration: none;
+/* ----- Icono del menu----- */
+.fa-bars{
+	height: 50px;
+	padding: 0;
+	font-size: 1.5pc;
+	top: 2px;
+	padding: 0px;
+	margin-left: 4px;
+}
+	
+.iconos a {
+	margin-left: 2em;
+	position: relative;
+	top: 2px;
 }
 
 /*
@@ -93,48 +119,47 @@ a:hover {
 nav {
 	float: right;
 }
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
-	}
-
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-		}
-
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-
-		nav ul li a:hover {
-		background: #0b76a6;
-	}
-
-  #floating-panel{
-position: absolute;
-top: 4px;
-left: 1px; /*Ubicacion del panel en la vista*/
-z-index:2;
-background-color: #333;
-padding: 0px;
-border: 0px solid #000;
-text-align: center;
-font-family: 'Roboto','sans-serif';
-line-height: 1px;
-padding-left: 1px;
-margin: 0px; /*Altura del panel*/
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
 }
 
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background: #0b76a6;
+}
+
+#floating-panel{
+	position: absolute;
+	top: 4px;
+	left: 1px; /*Ubicacion del panel en la vista*/
+	z-index:2;
+	background-color: #333;
+	padding: 0px;
+	border: 0px solid #000;
+	text-align: center;
+	font-family: 'Roboto','sans-serif';
+	line-height: 1px;
+	padding-left: 1px;
+	margin: 0px; /*Altura del panel*/
+}
 
 .dropdown-menu{
   background-color: transparent;
-   width: 35px; /*Ancho botones*/
-   height: 30px;
+  width: 35px; /*Ancho botones*/
+  height: 30px;
 }
 
 .btn-primary{
@@ -144,7 +169,6 @@ margin: 0px; /*Altura del panel*/
   padding: 3px;
   background: #333;
   border: #333;
-
 }
 
 .btn-primary:hover{
@@ -156,7 +180,6 @@ margin: 0px; /*Altura del panel*/
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-
 }
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
@@ -169,41 +192,23 @@ margin: 0px; /*Altura del panel*/
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-
 }
 
 .btn-primary {
 	color: #fff;
 	background-color: #333;
 	border-color: #333;
-
-}
-
-
-.fa-bars{
-  height: 50px;
-	padding: 0;
-	font-size: 1.5pc;
-	top: 2px;
-	padding: 0px;
-	margin: 0px;
-	
-
 }
 
 .btn-success{
-top: 0px;
-left: 0px;
-width: 183px; /*Ancho botones*/
-height: 35px;
-border-radius: 10px;
-position: 5px;
-font-weight: bold;
+	top: 0px;
+	left: 0px;
+	width: 183px; /*Ancho botones*/
+	height: 35px;
+	border-radius: 10px;
+	position: 5px;
+	font-weight: bold;
 }
-
-
-
-
 
 .btn-success{
   color: white;
@@ -217,39 +222,7 @@ font-weight: bold;
 .btn-success:hover{
   color: #0b76a6;
   color: #FFFF00;
-
 }
-
-.fa-globe-americas{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: -14em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
-
-}
-
-.fa-envelope{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: -12em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
-
-}
-
-.fa-sync-alt{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: -10em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
-
-}
-
 
 .enlace {
   display:inline;
@@ -270,19 +243,19 @@ position: absolute;
 }
 
 .table-bordered {
-   width: 20%;
+  width: 20%;
 }
+
 th, td {
    width: 20%;
 }
 
 @media (max-width: 1310px) {
-
-  .platzigram {
+	.platzigram {
     font-family: 'Oleo Script';
     font-size: 12px;
     color: secondary-color !important;
-  }
+}
   .logo {
   	float: left;
   	padding: 6px 0 0 5px;
@@ -293,7 +266,6 @@ th, td {
     height: auto;
     height: auto;
     margin-left: 42px;
-
 	}
 
 	.btn-success{
@@ -305,45 +277,40 @@ th, td {
 		position: 5px;
 		}
 
-.fa-globe-americas{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: -2.0em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
+	.fa-globe-americas{
+		width: 20px; /*Ancho botones*/
+		height:30px;
+		margin-left: -2.0em;
+		font-size: 1.5em;
+		top: 4pt;
+		position: absolute;
+	}
 
-}
+	.fa-envelope{
+		width: 20px; /*Ancho botones*/
+		height:30px;
+		margin-left: -0.3em;
+		font-size: 1.5em;
+		top: 4pt;
+		position: absolute;
+	}
 
-.fa-envelope{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: -0.3em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
+	.fa-sync-alt{
+		width: 20px; /*Ancho botones*/
+		height:30px;
+		margin-left: 1.5em;
+		font-size: 1.5em;
+		top: 4pt;
+		position: absolute;
+	}
 
-}
-
-.fa-sync-alt{
-width: 20px; /*Ancho botones*/
-height:30px;
-margin-left: 1.5em;
-font-size: 1.5em;
-top: 4pt;
-position: absolute;
-
-}
-
-.btn-success{
-top: 0px;
-left: 0px;
-width: 160px; /*Ancho botones*/
-height: 30px;
-border-radius: 10px;
-position: 5px;
-font-weight: bold;
-}
-
-
+	.btn-success{
+		top: 0px;
+		left: 0px;
+		width: 160px; /*Ancho botones*/
+		height: 30px;
+		border-radius: 10px;
+		position: 5px;
+		font-weight: bold;
+	}
 }
