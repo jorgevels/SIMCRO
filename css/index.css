@@ -1,4 +1,4 @@
- html,body {
+html,body {
   height: 100%;
 	margin: 0;
 	padding: 0;
@@ -10,7 +10,7 @@
 }
 
 #map {
-	height: 100%;
+	height: 98%;
 }
 
 h1 {
@@ -26,10 +26,15 @@ p {
 }
 
 a img{
-	width: 24px;
-  height: 24px;
+	width: 26px;
+  height: 26px;
 	margin-left: -2em;
 	margin-top: 2px;
+
+	/* display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; */
 }
 
 .header {
@@ -41,14 +46,20 @@ a img{
 	top: 0;
 	display: flex;
   align-items: center;
-  justify-content: space-between;
+	justify-content: space-between;
+	/* justify-content: flex-end; */
+	/* justify-content: center; */
+  /* padding-right: 200px; */ 
 	flex-wrap: wrap;
 }
 
 .header a {
 	color: white;
 	align-items: center;
+	
 }
+
+
 
 /* ---Logo del Header */
 
@@ -73,40 +84,55 @@ a:hover {
 	margin-left: -22em;
 	position: absolute;
 	margin-top: 2px;
+
+	/* display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; */
 }
 
 .fa-globe-americas{
 	margin-left: -14em;
 	font-size: 1.4em;
 	top: 4pt;
-	position: absolute;
+	/* position: absolute; */
+
 	
+  
 	}
 	
 .fa-comment-dots{
 	margin-left: -12em;
 	font-size: 1.5em;
 	top: 4pt;
-	position: absolute;
+	/* position: absolute; */
+
+	
+  
 }
 	
 .fa-sync-alt{
 	margin-left: -10em;
 	font-size: 1.4em;
 	top: 4pt;
-	position: absolute;
+	/* position: absolute */;
+
+	
+ 
 }
 
 /* ----- Icono del menu----- */
+
 .fa-bars{
-	height: 50px;
-	padding: 0;
-	font-size: 1.5pc;
-	top: 2px;
+	font-size: 25px;
 	padding: 0px;
 	margin-left: 4px;
 }
-	
+
+.iconos {
+	padding: 0;
+	margin: 0;
+}
 .iconos a {
 	margin-left: 2em;
 	position: relative;
@@ -116,6 +142,7 @@ a:hover {
 /*
  * Navegación
  */
+
 nav {
 	float: right;
 }
@@ -250,22 +277,34 @@ th, td {
    width: 20%;
 }
 
-@media (max-width: 1310px) {
-	.platzigram {
-    font-family: 'Oleo Script';
-    font-size: 12px;
-    color: secondary-color !important;
-}
+/*------------------Medias Queris---------------------- */
+
+@media screen and (max-width: 1400px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 23px;
+		margin-left: 1em;
+		position: absolute;
+		margin-top: 2px;
+	}
+
   .logo {
   	float: left;
-  	padding: 6px 0 0 5px;
+  	padding: 2px 0 0 0px;
   	text-decoration: none;
-  }
-  a img {
-  	width: 21px;
-    height: auto;
-    height: auto;
-    margin-left: 42px;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: -30px;
+		margin-top: 2px;
 	}
 
 	.btn-success{
@@ -278,31 +317,33 @@ th, td {
 		}
 
 	.fa-globe-americas{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: -2.0em;
+		margin-left: -14em;
+		font-size: 1.4em;
+		top: 4pt;
+		/* position: absolute; */
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
 		font-size: 1.5em;
 		top: 4pt;
-		position: absolute;
-	}
-
-	.fa-envelope{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: -0.3em;
-		font-size: 1.5em;
-		top: 4pt;
-		position: absolute;
-	}
-
+		/* position: absolute; */
+}
+			
 	.fa-sync-alt{
-		width: 20px; /*Ancho botones*/
-		height:30px;
-		margin-left: 1.5em;
-		font-size: 1.5em;
+		margin-left: -10em;
+		font-size: 1.4em;
 		top: 4pt;
-		position: absolute;
-	}
+		/* position: absolute; */
+}
+
+
+
+
+
+		.iconos {
+			margin-left: 200px;
+		}
 
 	.btn-success{
 		top: 0px;
@@ -314,3 +355,470 @@ th, td {
 		font-weight: bold;
 	}
 }
+@media screen and (max-width: 1260px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 30px;
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 1224px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 15px;
+		margin-top: 2px;
+	}
+}
+
+/* @media screen and (max-width: 1223px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 10px;
+		margin-top: 2px;
+	}
+
+}
+ */
+
+
+@media screen and (max-width: 1200px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 50px;
+		margin-top: 2px;
+	}
+
+}
+
+@media screen and (max-width: 1040px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 35px;
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 15px;
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 23px;
+		margin-left: 90px;
+		position: absolute;
+		margin-top: 2px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 40px;
+		margin-top: -1px;
+	}
+
+	.iconos {
+		margin-left: 450px;
+	}
+
+	.iconos a {
+		margin-left: 40px;
+		position: relative;
+		top: 2px;
+	}
+}
+@media screen and (max-width: 670px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 23px;
+		margin-left: 40px;
+		position: absolute;
+		margin-top: 2px;
+	}
+	a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 15px;
+		margin-top: -1px;
+	}
+	.iconos {
+		margin-left: 350px;
+	}
+}
+
+@media  (max-width: 600px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 16px;
+		margin-left: 15px;
+		position: absolute;
+		margin-top: 4px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 15px;
+		margin-top: 2px;
+	}
+
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+
+	.iconos {
+		margin-left: 300px;
+	}
+	
+	.iconos a {
+		margin-left: 15px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+@media  (max-width: 580px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 16px;
+		margin-left: 28px;
+		position: absolute;
+		margin-top: 4px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 15px;
+		margin-top: 2px;
+	}
+
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+
+	.iconos {
+		margin-left: 300px;
+	}
+	
+	.iconos a {
+		margin-left: 15px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+@media  (max-width: 480px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 16px;
+		margin-left: 16px;
+		position: absolute;
+		margin-top: 4px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 30px;
+		margin-top: 1px;
+	}
+
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.5em;
+		top: 4pt;
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1.5em;
+		top: 4pt;
+		}
+		.fa-bars{
+			font-size: 30px;
+			padding: 0px;
+			margin-left: 4px;
+			margin-top: -4px;
+		}
+
+
+
+	.iconos {
+		margin-left: 255px;
+	}
+	
+	.iconos a {
+		margin-left: 15px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 16px;
+		margin-left: 2px;
+		position: absolute;
+		margin-top: 4px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 20px;
+		margin-top: 2px;
+	}
+
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+
+	.iconos {
+		margin-left: 255px;
+	}
+	
+	.iconos a {
+		margin-left: 3px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+
+
+@media screen and (max-width: 360px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 16px;
+		margin-left: 2px;
+		position: absolute;
+		margin-top: 4px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 25px;
+		margin-top: 2px;
+	}
+
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1.3em;
+		top: 4pt;
+}
+
+	.iconos {
+		margin-left: 250px;
+	}
+	
+	.iconos a {
+		margin-left: 3px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+@media  (max-width: 320px) {
+	.logo .platzigram {
+		font-family: 'Oleo Script';
+		font-size: 12px;
+		margin-left: 0.5em;
+		position: absolute;
+		margin-top: 2px;
+	}
+
+  .logo {
+  	float: left;
+  	padding: 2px 0 0 0px;
+  	text-decoration: none;
+	}
+
+	.logo img{
+		float: left;
+		padding: 0px 0 0 0px;
+		text-decoration: none;
+	}
+
+  a img{
+		width: 26px;
+    height: 26px;
+		margin-left: 1.5em;
+		margin-top: 2px;
+	}
+	.fa-globe-americas{
+		margin-left: -14em;
+		font-size: 1em;
+		top: 4pt;	
+}
+			
+	.fa-comment-dots{
+		margin-left: -12em;
+		font-size: 1.1em;
+		top: 4pt;	
+}
+			
+	.fa-sync-alt{
+		margin-left: -10em;
+		font-size: 1em;
+		top: 4pt;
+}
+
+	.iconos {
+		margin-left: 200px;
+	}
+
+	.iconos a {
+		margin-left: 10px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+
