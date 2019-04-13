@@ -10,7 +10,6 @@ html, body {
 }
 
 body {
-
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -20,12 +19,10 @@ body {
   z-index: 10;
   margin-left: 70%;
   padding: 0%;
-  top: 3pt;
-	position: absolute;
-
+  top: 4.2pt;
+  position: absolute;
 }
 
-/* Each pricing-item*/
 .pricing-item {
   border-radius: 3px;
   display: inline-block;
@@ -35,14 +32,15 @@ body {
   vertical-align: top;
   position: relative;
   overflow: hidden;
-
   transition: all 0.2s cubic-bezier(0.3, 0.6, 0.2, 1.8);
 }
+
 .pricing-item:hover {
   -webkit-transform: scale(1.04);
   transform: scale(1.04);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
+
 .pricing-item .pricing-title {
   width: 100%;
   color: white;
@@ -52,11 +50,8 @@ body {
   padding: 0px;
   font-weight: bold;
   font-size: 15px; /* tamaño de los titulos */
-
-  
-  
-
 }
+
 .pricing-item .pricing-titles {
   width: 100%;
   display: block;
@@ -66,9 +61,11 @@ body {
   font-weight: bold;
   font-size: 15px; /* tamaño de los titulos */
 }
+
 .pricing-item.pricing-featured .pricing-title {
   background: #FF8000;
 }
+
 .pricing-item.pricing-featured .pricing-titles {
   background: rgba(255, 251, 0, 0.89);
 }
@@ -78,81 +75,98 @@ body {
 }
 
 /* Cantidad capturas */
-.cantidadSecuestro {
-  width: 30px;
-  height: 30px;
-  padding-top: 2px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 10px auto;
-  text-align: center;
 
+.cantidad {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.cantidadSecuestro {
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 15px;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
 }
 
 .cantidadExtorsion {
-  width: 30px;
-  height: 30px;
-  padding-top: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
   border-radius: 50%;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 15px;
+  text-align: center;
   margin: 10px auto;
   display: none;
-
 }
 
 .cantidadOtros {
-  width: 30px;
-  height: 30px;
-  padding-top: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
   border-radius: 50%;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 15px;
+  text-align: center;
   margin: 10px auto;
   display: block;
-
 }
 
 .cantidadTotal {
-  width: 30px;
-  height: 30px;
-  padding-top: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
   border-radius: 50%;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 15px;
+  text-align: center;
   margin: 10px auto;
   display: block;
-
 }
 
 .pricing-item .cantidadSecuestro {
   background: #FF4136;
-  border: 2px solid  #FF4136;
+  /* border: 2px solid  #FF4136; */
 }
 
 .pricing-item.pricing-featured .cantidadExtorsion {
   background: #FF8000;
-  border: 2px solid #FF8000;
+  /* border: 2px solid #FF8000; */
 }
 
 .pricing-item.pricing-featured .cantidadOtros {
   background: rgba(255, 251, 0, 0.89);
-  border: 2px solid rgba(255, 251, 0, 0.89);
+  /* border: 2px solid rgba(255, 251, 0, 0.89); */
 }
 
 .pricing-item.pricing-featured-total .cantidadTotal {
   background: rgb(0, 255, 13);
-  border: 2px solid rgb(0, 255, 13);
+  /* border: 2px solid rgb(0, 255, 13); */
 }
 
-
 @media (max-width: 1310px) {
-
   .tablaCantidad {
     text-align: center;
     z-index: 10;
@@ -160,82 +174,90 @@ body {
     padding: 0%;
     top: 65pt;
   	position: absolute;
-
   }
 
   /* Cantidad capturas */
 .cantidadSecuestro {
-  width: 20px;
-  height: 20px;
-  padding-top: 0px;
-  border-radius: 50%;
-  color: #000;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background: #ff4600;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 10px;
+  right: 0px;
   font-weight: bold;
   margin: 10px auto;
-  text-align: center;
-  
 }
+
 .cantidadExtorsion {
-  width: 20px;
-  height: 20px;
-  padding-top: 0px;
-  border-radius: 50%;
-  color: #000;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background: #ff4600;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 10px;
+  right: 0px;
   font-weight: bold;
   margin: 10px auto;
-  text-align: center;
-  
 }
 .cantidadOtros {
-  width: 20px;
-  height: 20px;
-  padding-top: 0px;
-  border-radius: 50%;
-  color: #000;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background: #ff4600;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 10px;
+  right: 0px;
   font-weight: bold;
   margin: 10px auto;
-  text-align: center;
-  
 }
 
 .cantidadTotal {
-  width: 20px;
-  height: 20px;
-  padding-top: 0px;
-  border-radius: 50%;
-  color: #000;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background: #ff4600;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 10px;
+  right: 0px;
   font-weight: bold;
   margin: 10px auto;
-  text-align: center;
-  
 }
 
 .pricing-item .cantidadSecuestro {
   background: #FF4136;
-  border: 0px solid  #FF4136;
+  /* border: 0px solid  #FF4136; */
 }
 
 .pricing-item.pricing-featured .cantidadExtorsion {
   background: #FF8000;
-  border: 0px solid #FF8000;
+ /*  border: 0px solid #FF8000; */
 }
 
 .pricing-item.pricing-featured .cantidadOtros {
   background: rgba(255, 251, 0, 0.89);
-  border: 0px solid rgba(255, 251, 0, 0.89);
+  /* border: 0px solid rgba(255, 251, 0, 0.89); */
 }
 
 .pricing-item.pricing-featured-total .cantidadTotal {
   background: rgb(0, 255, 13);
-  border: 0px solid rgb(0, 255, 13);
+  /* border: 0px solid rgb(0, 255, 13); */
 }
 
 .pricing-item {
@@ -264,7 +286,6 @@ body {
   
 .pricing-item .pricing-titles {
   width: 100%;
-
   display: block;
   position: relative;
   background: #FF4136;

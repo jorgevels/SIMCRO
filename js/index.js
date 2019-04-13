@@ -17,7 +17,9 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
 
-    center: { lat: 6.1409, lng: -75.4112 },
+    /* center: { lat: 6.1409, lng: -75.4112 }, */
+   
+        center: { lat: 6.105243, lng: -75.350567 },
 
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     mapTypeControl: true,
@@ -27,22 +29,15 @@ function initMap() {
     }
     
   });
-
-  /* var img = (src = "ico/./marke.ico");
-  var beachMarker = new google.maps.Marker({
-    position: { lat: 6.1330, lng: -75.4112 },
-    map: map,
-    icon: img
-  }); */
   
   var img = (src = "ico/./marke.ico");
   marker = new google.maps.Marker({
     map: map,
     icon: img,
-    title: 'Hello World!',
+    title: 'Gaula Oriente !',
     draggable: true,
     animation: google.maps.Animation.DROP,
-    position: { lat: 6.1408, lng: -75.4112 }
+    position: { lat: 6.126014, lng: -75.409273 }
   });
   marker.addListener('click', toggleBounce);
 
@@ -55,9 +50,6 @@ function toggleBounce() {
   }
 }
   
-  
-
-
    todasLasCapturas = new google.maps.visualization.HeatmapLayer({
     data: pointsTodasLasCapturas(),
     /* map: map */
@@ -78,6 +70,7 @@ function toggleBounce() {
     //map: map
   });
 }
+
 // Funcion para activar el mapa de calor
 function activarMapaCalor(className) {
   todasLasCapturas.setMap(todasLasCapturas.getMap() ? null : map);
@@ -100,6 +93,7 @@ function activarMapaCalor(className) {
 
   }
 }
+
 // Funcion para cambiar el color del mapa de color
 function cambiarGradiente() {
   var gradient = [
@@ -123,6 +117,7 @@ function cambiarGradiente() {
   extorsion.set('gradient', extorsion.get('gradient') ? null : gradient);
   otrosDelitos.set('gradient', otrosDelitos.get('gradient') ? null : gradient);
 }
+
 // Funcion para cambiar el tamaño de la macha de calor
 function cambiarTamaño() {
   todasLasCapturas.set('radius', todasLasCapturas.get('radius') ? null : 20);
@@ -130,6 +125,7 @@ function cambiarTamaño() {
   extorsion.set('radius', extorsion.get('radius') ? null : 20);
   otrosDelitos.set('radius', otrosDelitos.get('radius') ? null : 20);
 }
+
 // Funcion para cambiar la opacidad del mapa de calor
 function cambiarOpacidad() {
   todasLasCapturas.set('opacity', todasLasCapturas.get('opacity') ? null : 0.4);
@@ -211,6 +207,7 @@ function capturasOtrosDelitos(className) {
 
   }
 }
+
 // Funcion para mostrar los points de todas las capturas
 function todasLasCapt(className) {
   todasLasCapturas.setMap(todasLasCapturas.getMap() ? null : map);

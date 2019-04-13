@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,72 +28,66 @@
             </div>             
         </div>
 
-                  
-              <!-- Tabla que contine las cantidades de los resultados-->
-              <div class="tablaCantidad" style="display: block">
-                  <div class="pricing-item">
-                    <div class="pricing-title">
-                      Secuestro
-                    </div>
-                    <div class="cantidad">
-                      <div class="cantidadSecuestro" style="display: none">22
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pricing-item pricing-featured">
-                    <div class="pricing-title">
-                      Extorsion
-                    </div>
-                    <div class="cantidad">
-                      <div class="cantidadExtorsion" style="display: none">21<span class="smallText"></span>
-                        <span class="undertext"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pricing-item pricing-featured">
-                    <div class="pricing-titles">
-                      Otros
-                    </div>
-                    <div class="cantidad">
-                      <div class="cantidadOtros" style="display: none">42<span class="smallText"></span>
-                        <span class="undertext"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pricing-item pricing-featured-total">
-                    <div class="pricing-titles">
-                      Total
-                        </div>
-                        <div class="cantidad">
-                          <div class="cantidadTotal" style="display: none">85<span class="smallText"></span>
-                            <span class="undertext"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="floating-panel">
-                      <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i
-                            class="fas fa-bars"></i></span></button>
-                    <ul class="dropdown-menu">
-                      <li><button onclick="activarMapaCalor('cantidad')" class="btn btn-success">Activar/Desactivar</button></li>
-                      <li><button onclick="cambiarGradiente()" class="btn btn-success">Cambiar color</button></li>
-                      <li><button onclick="cambiarTamaño()" class="btn btn-success">Cambiar grosor</button></li>
-                      <li><button onclick="cambiarOpacidad()" class="btn btn-success">Cambiar opacidad</button></li>
-                      <li><button onclick="capturasSecuestro('cantidadSecuestro')" class="btn btn-success">Capturas
-                          secuestro</button></li>
-                      <li><button onclick="capturasExtorsion('cantidadExtorsion')" class="btn btn-success">Capturas
-                          extorsion</button></li>
-                      <li><button onclick="capturasOtrosDelitos('cantidadOtros')" class="btn btn-success">Capturas otros
-                          delitos</button></li>
-                      <li><button onclick="todasLasCapt('cantidad')" class="btn btn-success">Todas las capturas</button></li>
-                    </ul>
+    <!-- Tabla que contine las cantidades de los resultados-->
+        <div class="tablaCantidad" style="display: block">
+          <div class="pricing-item">
+              <div class="pricing-title">
+                Secuestro
+              </div>
+                <div class="cantidad">
+                <div class="cantidadSecuestro" style="display: none">120
+            </div>
+          </div>
+        </div>
+        <div class="pricing-item pricing-featured">
+          <div class="pricing-title">
+                Extorsion
+              </div>
+              <div class="cantidad">
+                <div class="cantidadExtorsion" style="display: none">143<span class="smallText"></span>
+                  <span class="undertext"></span>
                   </div>
                 </div>
+              </div>
+        <div class="pricing-item pricing-featured">
+          <div class="pricing-titles">
+                Otros
+              </div>
+              <div class="cantidad">
+                <div class="cantidadOtros" style="display: none">52<span class="smallText"></span>
+                  <span class="undertext"></span>
+                  </div>
                 </div>
+            </div>
+        <div class="pricing-item pricing-featured-total">
+          <div class="pricing-titles">
+                Total
+              </div>
+              <div class="cantidad">
+                <div class="cantidadTotal" style="display: none">305<span class="smallText"></span>
+                    <span class="undertext"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <div id="floating-panel">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i
+              class="fas fa-bars"></i></span></button>
+              <ul class="dropdown-menu">
+                <li><button onclick="capturasSecuestro('cantidadSecuestro')" class="btn btn-success">Capturas secuestro</button></li>
+                <li><button onclick="capturasExtorsion('cantidadExtorsion')" class="btn btn-success">Capturas extorsion</button></li>
+                <li><button onclick="capturasOtrosDelitos('cantidadOtros')" class="btn btn-success">Capturas otros delitos</button></li>
+                <li><button onclick="todasLasCapt('cantidad')" class="btn btn-success">Todas las capturas</button></li>
+                <li><button onclick="cambiarOpacidad()" class="btn btn-success">Cambiar opacidad</button></li>
+                <li><button onclick="cambiarGradiente()" class="btn btn-success">Cambiar color</button></li>
+                <li><button onclick="cambiarTamaño()" class="btn btn-success">Cambiar grosor</button></li>
+                <li><button onclick="activarMapaCalor('cantidad')" class="btn btn-success">Activar/Desactivar</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </header>
-
-
       <div id="map"></div>
 
         <script src="js/pointsExtorsion.js"></script>

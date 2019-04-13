@@ -29,12 +29,7 @@ a img{
 	width: 26px;
   height: 26px;
 	margin-left: -2em;
-	margin-top: 2px;
-
-	/* display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; */
+	margin-top: 1px;
 }
 
 .header {
@@ -47,19 +42,13 @@ a img{
 	display: flex;
   align-items: center;
 	justify-content: space-between;
-	/* justify-content: flex-end; */
-	/* justify-content: center; */
-  /* padding-right: 200px; */ 
 	flex-wrap: wrap;
 }
 
 .header a {
 	color: white;
 	align-items: center;
-	
 }
-
-
 
 /* ---Logo del Header */
 
@@ -78,47 +67,31 @@ a:hover {
 }
 
 /* ------Titulo del logo------ */
+
 .logo .platzigram {
   font-family: 'Oleo Script';
 	font-size: 25px;
 	margin-left: -22em;
 	position: absolute;
 	margin-top: 2px;
-
-	/* display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; */
 }
 
 .fa-globe-americas{
 	margin-left: -14em;
 	font-size: 1.4em;
 	top: 4pt;
-	/* position: absolute; */
-
-	
-  
-	}
+}
 	
 .fa-comment-dots{
 	margin-left: -12em;
 	font-size: 1.5em;
 	top: 4pt;
-	/* position: absolute; */
-
-	
-  
 }
 	
 .fa-sync-alt{
 	margin-left: -10em;
 	font-size: 1.4em;
 	top: 4pt;
-	/* position: absolute */;
-
-	
- 
 }
 
 /* ----- Icono del menu----- */
@@ -138,10 +111,6 @@ a:hover {
 	position: relative;
 	top: 2px;
 }
-
-/*
- * Navegación
- */
 
 nav {
 	float: right;
@@ -186,7 +155,8 @@ nav ul li a:hover {
 .dropdown-menu{
   background-color: transparent;
   width: 35px; /*Ancho botones*/
-  height: 30px;
+	height: 30px;
+	margin-top: -4px;
 }
 
 .btn-primary{
@@ -277,7 +247,7 @@ th, td {
    width: 20%;
 }
 
-/*------------------Medias Queris---------------------- */
+/*------------------Medias Querys---------------------- */
 
 @media screen and (max-width: 1400px) {
 	.logo .platzigram {
@@ -304,7 +274,7 @@ th, td {
 		width: 26px;
     height: 26px;
 		margin-left: -30px;
-		margin-top: 2px;
+		margin-top: -1px;
 	}
 
 	.btn-success{
@@ -314,42 +284,33 @@ th, td {
 		height: 35px;
 		border-radius: 10px;
 		position: 5px;
-		}
+	}
 
 	.fa-globe-americas{
 		margin-left: -14em;
 		font-size: 1.4em;
 		top: 4pt;
-		/* position: absolute; */
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.5em;
 		top: 4pt;
-		/* position: absolute; */
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.4em;
 		top: 4pt;
-		/* position: absolute; */
-}
-
-
-
-
-
-		.iconos {
+	}
+	.iconos {
 			margin-left: 200px;
-		}
+	}
 
 	.btn-success{
-		top: 0px;
 		left: 0px;
 		width: 160px; /*Ancho botones*/
-		height: 30px;
+		height: 40px;
 		border-radius: 10px;
 		position: 5px;
 		font-weight: bold;
@@ -373,18 +334,6 @@ th, td {
 	}
 }
 
-/* @media screen and (max-width: 1223px) {
-	a img{
-		width: 26px;
-    height: 26px;
-		margin-left: 10px;
-		margin-top: 2px;
-	}
-
-}
- */
-
-
 @media screen and (max-width: 1200px) {
 	a img{
 		width: 26px;
@@ -392,7 +341,6 @@ th, td {
 		margin-left: 50px;
 		margin-top: 2px;
 	}
-
 }
 
 @media screen and (max-width: 1040px) {
@@ -451,6 +399,7 @@ th, td {
 		top: 2px;
 	}
 }
+
 @media screen and (max-width: 670px) {
 	.logo .platzigram {
 		font-family: 'Oleo Script';
@@ -459,6 +408,7 @@ th, td {
 		position: absolute;
 		margin-top: 2px;
 	}
+
 	a img{
 		width: 26px;
     height: 26px;
@@ -502,19 +452,19 @@ th, td {
 		margin-left: -14em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 
 	.iconos {
 		margin-left: 300px;
@@ -559,19 +509,19 @@ th, td {
 		margin-left: -14em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 
 	.iconos {
 		margin-left: 300px;
@@ -616,27 +566,25 @@ th, td {
 		margin-left: -14em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}	
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.5em;
 		top: 4pt;
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.5em;
 		top: 4pt;
-		}
-		.fa-bars{
+	}
+	.fa-bars{
 			font-size: 30px;
 			padding: 0px;
 			margin-left: 4px;
 			margin-top: -4px;
-		}
-
-
+	}
 
 	.iconos {
 		margin-left: 255px;
@@ -681,19 +629,19 @@ th, td {
 		margin-left: -14em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 
 	.iconos {
 		margin-left: 255px;
@@ -705,8 +653,6 @@ th, td {
 		top: 5px;
 	}
 }
-
-
 
 @media screen and (max-width: 360px) {
 	.logo .platzigram {
@@ -740,19 +686,19 @@ th, td {
 		margin-left: -14em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1.3em;
 		top: 4pt;
-}
+	}
 
 	.iconos {
 		margin-left: 250px;
@@ -792,23 +738,24 @@ th, td {
 		margin-left: 1.5em;
 		margin-top: 2px;
 	}
+
 	.fa-globe-americas{
 		margin-left: -14em;
 		font-size: 1em;
 		top: 4pt;	
-}
+	}
 			
 	.fa-comment-dots{
 		margin-left: -12em;
 		font-size: 1.1em;
 		top: 4pt;	
-}
+	}
 			
 	.fa-sync-alt{
 		margin-left: -10em;
 		font-size: 1em;
 		top: 4pt;
-}
+	}
 
 	.iconos {
 		margin-left: 200px;
