@@ -11,24 +11,52 @@ i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
 ga('create', 'UA-64663506-1', 'auto');
 ga('send', 'pageview');
 
-var map, todasLasCapturas, extorsion, secuestro, otrosDelitos;
+var map, todasLasCapturas, extorsion, secuestro, otrosDelitos ;
  
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"),  {
     zoom: 10,
+    zoomControl: false,
+    scaleControl: false,
+   
+    
+   
+    streetViewControl: true,
+    
+    fullscreenControl: false,
+    
+    gestureHandling: 'greedy',   
+    
 
     /* center: { lat: 6.1409, lng: -75.4112 }, */
    
         center: { lat: 6.105243, lng: -75.350567 },
 
     mapTypeId: google.maps.MapTypeId.SATELLITE,
+
     mapTypeControl: true,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+    
+      
+      
+
       //mapTypeIds: ["",'']
-    }
+
+  
+   
+    },
+    zoomControl:true,
+    zoomControlOptions: {
+      style:google.maps.ZoomControlStyle.DEFAULT,
+      /* style:google.maps.backgroundColor = 'red',
+      style:google.maps.border = '20px solid #fff',
+      style:google.maps.borderRadius = '3px', */
+  }
     
   });
+
+   
   
   var img = (src = "ico/./marke.ico");
   marker = new google.maps.Marker({

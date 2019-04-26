@@ -80,6 +80,7 @@ body {
   display: flex;
   align-items: center;
   color: black;
+  
 }
 
 .cantidadSecuestro {
@@ -172,7 +173,7 @@ body {
     z-index: 10;
     margin-left: 80%;
     padding: 0%;
-    top: 65pt;
+    top: 35pt;
   	position: absolute;
   }
 
