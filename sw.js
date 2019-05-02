@@ -5,13 +5,10 @@ self.addEventListener('install', function(e) {
        
         '/SIMCRO/',
         '/SIMCRO/index.html',
-        '/SIMCRO/js/..index.js',
+        '/SIMCRO/js/index.js',
         '/SIMCRO/index.css',
-        '/SIMCRO/css/..style2.css',
-        '/SIMCRO/images/fox1.jpg',
-        '/SIMCRO/images/fox2.jpg',
-        '/SIMCRO/images/fox3.jpg',
-        '/SIMCRO/images/fox4.jpg'
+        '/SIMCRO/css/style2.css',
+        
       ]);
     })
   );
