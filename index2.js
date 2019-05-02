@@ -15,7 +15,7 @@ setInterval(function() {
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/addhomes/sw.js')
+           .register('/SIMCRO/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
