@@ -5,7 +5,7 @@ self.addEventListener('install', function(e) {
        
         '/SIMCRO/',
         '/SIMCRO/index.html',
-        '/SIMCRO/index2.js',
+        '/SIMCRO/indexx.js',
         '/SIMCRO/css/index.css',
         '/SIMCRO/style.css',
         
