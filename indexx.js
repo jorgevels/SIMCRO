@@ -1,17 +1,3 @@
-/* const images = ['fox1','fox2','fox3','fox4'];
-const imgElem = document.querySelector('img');
-
-function randomValueFromArray(array) {
-  let randomNo =  Math.floor(Math.random() * array.length);
-  return array[randomNo];
-}
-
-setInterval(function() {
-  let randomChoice = randomValueFromArray(images);
-  imgElem.src = 'images/' + randomChoice + '.jpg';
-}, 2000)
- */
-// Registrar al trabajador de servicios para controlar el funcionamiento del sitio sin conexión
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
