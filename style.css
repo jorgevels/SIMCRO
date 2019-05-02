@@ -1,13 +1,3 @@
-html {
-  height: 100%;
-  background: black;
-}
-
-body {
-  height: inherit;
-  margin: 0;
-}
-
 
 .add-button {
   position: absolute;
@@ -15,9 +5,3 @@ body {
   left: 1px;
 }
 
-@media (orientation: landscape) {
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
-}
