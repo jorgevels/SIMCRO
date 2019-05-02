@@ -4,9 +4,9 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "ico/markp.ico",
+      "src": "ico/markp.png",
       "sizes": "192x192",
-      "type": "image/ico"
+      "type": "image/png"
     }
   ],
   "name": "Sistema mapa de calor de resultados operacionales",
