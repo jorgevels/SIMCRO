@@ -449,9 +449,9 @@ th, td {
 @media screen and (max-width: 768px) {
 
 	
-	.add-button {
+	/* .add-button {
   display: block;
-}
+} */
 
 	/* Controles del Zom */
   .gm-control-active {
