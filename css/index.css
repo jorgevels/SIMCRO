@@ -448,7 +448,19 @@ th, td {
 
 @media screen and (max-width: 768px) {
 
+	.header {
+		
+		height: 45px; /* Alto del header */
+	}
+
+	.fa-bars{
+		font-size: 30px;
+		padding: 0px;
+		margin-left: 4px;
+	/* 	margin-top: 4px;  */
+		margin-top: 2px; 
 	
+}
 	/* .add-button {
   display: block;
 } */
@@ -744,7 +756,9 @@ th, td {
 			font-size: 30px;
 			padding: 0px;
 			margin-left: 4px;
-			margin-top: -4px;
+		/* 	margin-top: 4px;  */
+			margin-top: 2px; 
+		
 	}
 
 	.iconos {
