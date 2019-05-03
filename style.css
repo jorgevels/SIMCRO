@@ -5,3 +5,9 @@
   left: 1px;
 }
 
+@media screen and (max-width: 768px) {
+
+	.add-button {
+  display: block;
+  }
+}
