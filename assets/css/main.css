@@ -113,6 +113,7 @@ input, select, textarea {
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
+		
 	}
 
 		a:hover {
@@ -124,6 +125,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		position: relative;
+		
 	}
 
 		.icon:before {
@@ -141,19 +143,25 @@ input, select, textarea {
 
 
 		.fa-whatsapp  {
-			color: green;
+			
+		
+			color: #01E675;
 			margin-left: -20%;
+			font-size: 30px;
+			
 
 		  }
 
 		  .fa-envelope-o  {
 			color: yellow;
 			margin-left: -20%;
+			font-size: 30px;
 
 		  }
 		  .fa-phone  {
 			color: blue;
 			margin-left: -20%;
+			font-size: 30px;
 
 		  }
 
@@ -533,10 +541,15 @@ input, select, textarea {
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
+	/* 	-moz-animation: header 1s 2.25s forwards;
 		-webkit-animation: header 1s 2.25s forwards;
 		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		animation: header 1s 2.25s forwards; */
+
+		-moz-animation: header 0s 0s forwards;
+		-webkit-animation: header 0s 0s forwards;
+		-ms-animation: header 0s 0s forwards;
+		animation: header 0s 0s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -679,13 +692,17 @@ input, select, textarea {
 					border-radius: 100%;
 					border: solid 1px #fff;
 					display: block;
-					font-size: 1.75em;
-					height: 2.5em;
-					line-height: 2.5em;
+					/* font-size: 1.75em; */
+					font-size: 1.90em;
+
+					height: 1.5em;
+					line-height: 1.5em;
 					position: relative;
 					text-align: center;
 					top: 0;
-					width: 2.5em;
+					width: 1.5em;
+					
+					
 				}
 
 				#header nav a:hover {
