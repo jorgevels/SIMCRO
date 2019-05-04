@@ -1,4 +1,4 @@
-/* if('serviceWorker' in navigator) {
+if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/SIMCRO/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
@@ -34,4 +34,3 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
- */
