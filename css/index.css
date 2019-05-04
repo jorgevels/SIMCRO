@@ -10,7 +10,7 @@ html,body {
 }
 
 #map {
-	height: 90.6%;
+	height: 94.6%;
 }
 
 h1 {
@@ -453,6 +453,10 @@ th, td {
 		height: 45px; /* Alto del header */
 	}
 
+	#map {
+		height: 88%;
+	}
+	
 	.fa-bars{
 		font-size: 30px;
 		padding: 0px;
@@ -571,6 +575,10 @@ th, td {
 }
 
 @media screen and (max-width: 670px) {
+	#map {
+		height: 94%;
+	}
+
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 23px;
@@ -591,6 +599,10 @@ th, td {
 }
 
 @media  (max-width: 600px) {
+	#map {
+		height: 94%;
+	}
+
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 16px;
@@ -648,6 +660,10 @@ th, td {
 }
 
 @media  (max-width: 580px) {
+	#map {
+		height: 94%;
+	}
+
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 16px;
@@ -706,8 +722,9 @@ th, td {
 
 @media  (max-width: 480px) {
 	#map {
-		height: 96%;
+		height: 94%;
 	}
+
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 16px;
@@ -776,7 +793,7 @@ th, td {
 
 @media screen and (max-width: 375px) {
 	#map {
-		height: 96%;
+		height: 94%;
 	}
 
 	.logo .platzigram {
@@ -836,6 +853,10 @@ th, td {
 }
 
 @media screen and (max-width: 360px) {
+	#map {
+		height: 94%;
+	}
+
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 16px;
@@ -894,9 +915,9 @@ th, td {
 
 @media  (max-width: 320px) {
 
-	/* #map {
+	#map {
 		height: 94%;
-	} */
+	}
 	.logo .platzigram {
 		font-family: 'Oleo Script';
 		font-size: 12px;
