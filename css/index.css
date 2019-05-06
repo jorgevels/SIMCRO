@@ -722,7 +722,7 @@ th, td {
 
 @media  (max-width: 480px) {
 	#map {
-		height: 94%;
+		height: 90%;
 	}
 
 	.logo .platzigram {
