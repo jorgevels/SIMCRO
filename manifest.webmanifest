@@ -5,7 +5,7 @@
   "icons": [
     {
       "src": "ico/markp8.png",
-      "propósito": "insignia",
+      "propósito": "badge",
       "sizes": "192x192",
       "type": "image/png"
     }
