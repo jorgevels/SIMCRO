@@ -5,7 +5,7 @@
   "icons": [
     {
       "src": "ico/markp8.png",
-      "purpose": "maskable",
+    
       "sizes": "192x192",
       "type": "image/png"
     }
