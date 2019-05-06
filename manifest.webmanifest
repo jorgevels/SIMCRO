@@ -5,7 +5,7 @@
   "icons": [
     {
       "src": "ico/markp8.png",
-      "background_color": "purple",
+      "propósito": "insignia",
       "sizes": "192x192",
       "type": "image/png"
     }
