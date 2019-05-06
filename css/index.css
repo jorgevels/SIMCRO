@@ -157,7 +157,7 @@ nav ul li a:hover {
   background-color: transparent;
   width: 35px; /*Ancho botones*/
 	height: 30px;
-	margin-top: -4px;
+	margin-top: 5.4px;
 }
 
 .btn-primary{
