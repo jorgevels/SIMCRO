@@ -6,9 +6,9 @@ if ("serviceWorker" in navigator) {
 
 // Código para manejar la solicitud de instalación en el escritorio
 
-/* let deferredPrompt;
+let deferredPrompt;
 const addBtn = document.querySelector(".add-button");
-addBtn.style.display = "none"; */
+addBtn.style.display = "none";
 
 window.addEventListener("beforeinstallprompt", (e) => {
   // Evita que Chrome 67 y versiones anteriores muestren automáticamente el aviso
